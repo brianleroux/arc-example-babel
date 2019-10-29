@@ -18,8 +18,7 @@ export default {
           {
             modules: 'false',
             targets: {
-              browsers: '> 1%, IE 11, not op_mini all, not dead',
-              node: 8
+              node: 10
             },
             useBuiltIns: 'usage',
             corejs: 3,
