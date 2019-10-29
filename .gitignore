@@ -1,3 +1,4 @@
+src/**/*/index.js
 node_modules
 sam.yaml
 sam.json

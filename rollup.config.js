@@ -12,19 +12,14 @@ export default {
     resolve(),
     babel({
       exclude: 'node_modules/**',
-      presets: [
-        [
-          '@babel/env',
-          {
-            modules: 'false',
-            targets: {
-              node: 10
-            },
-            useBuiltIns: 'usage',
-            corejs: 3,
-          }
-        ]
-      ],
+      presets: [[
+        '@babel/env', {
+          modules: 'false',
+          targets: {node: 10},
+          useBuiltIns: 'usage',
+          corejs: 3
+        }
+      ]],
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     }),
     commonjs()
