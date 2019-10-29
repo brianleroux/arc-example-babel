@@ -1,0 +1,22 @@
+{
+  "name": "arc-example-babel",
+  "scripts": {
+    "build": "npx rollup -c",
+    "start": "npm run build && npx arc sandbox",
+    "deploy": "npm run build && npx arc deploy"
+  },
+  "dependencies": {
+    "@architect/architect": "^6.0.21",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "core-js": "^3.3.5",
+    "regenerator-runtime": "^0.13.3",
+    "rollup": "^1.26.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
